@@ -161,7 +161,7 @@ a {
 
 .nav-outras {                    
     background: var(--cor-escura);        
-    box-shadow: 5px 5px 10px 0 rgba(50, 50, 50, 0.25);    
+    /*box-shadow: 5px 5px 10px 0 rgba(50, 50, 50, 0.25);    */
     position: sticky; 
     margin-left: 0;       
 }
