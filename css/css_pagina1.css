@@ -111,7 +111,7 @@ a {
 }
 
 #icon-luz {
-  padding: 0.2em;
+  padding: 0.25em;
   margin-top: 4px;
   margin: 0 auto;
   font-size: 12px;
@@ -121,7 +121,7 @@ a {
 }
 
 #icon-escuro {
-  padding: 0.2em;
+  padding: 0.25em;
   margin: 0 auto;   
   font-size: 12px;
   transition: 0.2 ease;
@@ -1508,6 +1508,16 @@ summary {
      #iframe-v1, #iframe-v2, #iframe-v3, #iframe-v4 {
         width: 300vw;
     }
+
+    #icon-luz {
+        padding: 0.1em;
+       
+      }
+      
+      #icon-escuro {
+        padding: 0.1em;
+       
+      }
     
   
 }
@@ -1616,6 +1626,16 @@ summary {
 #iframe-v1, #iframe-v2, #iframe-v3, #iframe-v4 {
     width: 400vw;
 }
+
+#icon-luz {
+    padding: 0.15em;
+   
+  }
+  
+  #icon-escuro {
+    padding: 0.15em;
+   
+  }
 
 
 }
