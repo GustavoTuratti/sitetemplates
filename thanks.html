@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+   <head>      
+      
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Gustavo Turatti">
+      <meta name="description" content="Projeto de site pessoal">
+      <meta name="keywords" content="design, curriculo">
+
+      <title>Site Pessoal / Gustavo Turatti </title>
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+      <link href="css/css_pagina1.css" type="text/css" rel="stylesheet">
+      <link href="css/all.min.css" type="text/css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+   </head>
+   
+   <body>
+     
+
+    <!--Cabeçalho e menu superior-->
+      <input type="checkbox" id="dark-mode-input"/>
+      <label class="dark-mode-toggler" for="dark-mode-input">
+         <i class="fa-solid fa-moon" id="icon-luz"></i>
+         <i class="fa-solid fa-sun" id="icon-escuro"></i>
+         <div></div>
+      </label>
+
+      
+      
+   <!-- Página dentro da DIV-->
+      <div class="page">
+   
+        <!-- Menu Navegação-->
+        <nav class="nav-outras">
+         <div id="nav-div-1"><img id="nav-logo" src="img/Logo-blue.png"></a></div>
+                   
+        <div id="nav-div-3">
+            <a href="#">
+               <i class="fa-brands fa-linkedin-in"></i>
+            <b id="nav-a-1">LinkedIn</b>
+            </a>
+            <a href="#">
+               <i class="fa-brands fa-instagram"></i>
+               <b id="nav-a-2">Instagram</b>
+            </a>
+            <a href="#">
+               <i class="fa-brands fa-facebook"></i>
+               <b id="nav-a-3"> Facebook</b>
+            </a>
+            <a href="#">
+               <i class="fa-brands fa-whatsapp"></i>
+               <b id="nav-a-4"> Whatsapp</b>
+            </a>
+            <a href="index">
+               <i class="fa-solid fa-home"></i>
+            </a>
+         </div>
+         <div id="nav-div-2">
+            <a href="#menu-expand">
+               <i style="font-size: 200%;" class="fa-solid fa-bars" id="menu-bars"></i><b id="nav-a5">&emsp;Menu</b>
+            </a> 
+         </div> 
+         <div id="nav-div-4">
+            <a href="#menu-expand-celular">
+               
+               <i style="font-size: 200%;" class="fa-solid fa-bars" id="menu-bars"></i>              
+               <b id="nav-a5">Menu&emsp;</b>
+            </a>              
+         </div>                      
+      </nav>
+
+      <!-- Expansão Menu Navegação-->
+      <div class="menu-class borda-menu" id="menu-expand">               
+         <a href="#dark-mode-input" class="btn-galeria" id="close">X</a>               
+         <div style="width:80%; text-align: left; justify-content: center; text-decoration: none;">
+            <ul class="menu-exp-ul">
+               <li> <a href="curriculo" style="text-decoration: none;">Sobre a empresa</a></li>
+               <li><a href="servicos">Galeria de serviços</a></li>
+               <li><a href="contato">Fale conosco</a></li>
+               <li><a href="blog">Blog</a></li>
+            </ul>                        
+         </div>            
+      </div>
+      
+      <!-- Expansão Menu Navegação Celular-->
+      <div class="menu-class borda-menu" id="menu-expand-celular">               
+         <a href="#dark-mode-input" class="btn-galeria" id="close">X</a>               
+         <div style="width:100%; text-align: left; justify-content: center; text-decoration: none;">
+            <ul class="menu-exp-ul">
+               <li> <a href="curriculo" style="text-decoration: none;">Sobre a empresa</a></li>
+               <li><a href="servicos">Galeria de serviços</a></li>
+               <li><a href="contato">Fale conosco</a></li>
+               <li><a href="blog">Blog</a></li>
+               <li><a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+               <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+               <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+               <li><a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>                  
+               <li><a href="index"><i class="fa-solid fa-home"></i> Home</a></li>
+            </ul>                        
+         </div>            
+      </div>  
+   
+         <!-- Card com mensagem -->
+         <div class="container">      
+            <div id="carta-cnt" style="height: 80vh; width: 80vw;">
+               <div class="estilo-crd cor-princ" id="carta">            
+                  <div id="frente"><p class="titulo cor-fundo-txt" style="font-size: 1400%;"><i class="fa-solid fa-thumbs-up"></i></p></div>
+                  <div id="verso"><p class="big-txt t-200" style="font-size: 650%;">Obrigado</p></div>
+               </div>         
+            </div>
+        </div>     
+        
+         <!-- Rodapé-->
+         <footer>
+            <div class="container">
+               <p class="texto">Rua dos Testes, 123 - Bairro Teste</p>
+               <p class="texto">|</p>
+               <p class="texto">Fone: (19) 3333-3333 : Whatsapp: (19) 99999-9999</p>
+               <p class="texto">|</p>
+               <p class="texto">E-mail: teste@teste.com.br</p>
+            </div>
+            <p class="texto menor-txt" style="text-align: center;">© 2022 Woud Marketing Templates - Todos os direitos reservados.</p>
+         </footer>
+      
+      </div>
+      
+      <script src="https://kit.fontawesome.com/e4057a48ad.js" crossorigin="anonymous"></script>
+   
+   </body>
+
+</html>

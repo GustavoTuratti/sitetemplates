@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+   <head>      
+      
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Gustavo Turatti">
+      <meta name="description" content="Projeto de site pessoal">
+      <meta name="keywords" content="design, curriculo">
+
+      <title>Site Pessoal / Gustavo Turatti </title>
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+      <link href="css/css_pagina1.css" type="text/css" rel="stylesheet">
+      <link href="css/all.min.css" type="text/css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+   </head>
+<body onload="banner1()">
+   <div class="menor-txt" id="load">
+      <div class="container titulo claro" style="height: 100%;">
+         <div  id="carregando"></div>&emsp;Carregando
+      </div>
+      
+   </div>
+
+    <!--Cabeçalho e menu superior-->
+    <input type="checkbox" id="dark-mode-input"/>
+    <label class="dark-mode-toggler" for="dark-mode-input">
+       <i class="fa-solid fa-moon" id="icon-luz"></i>
+       <i class="fa-solid fa-sun" id="icon-escuro"></i>
+       <div></div>
+    </label>
+    
+    
+ <!-- Página dentro da DIV-->
+    <div class="page">
+ 
+       <!-- Menu Navegação-->
+       <nav>
+          <div id="nav-div-1"><img id="nav-logo" src="img/Logo-blue.png"></a></div>
+          <div id="nav-div-3"><div id="nav-div-3">
+             <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+             <b id="nav-a-1">LinkedIn</b>
+             </a>
+             <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <b id="nav-a-2">Instagram</b>
+             </a>
+             <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+                <b id="nav-a-3"> Facebook</b>
+             </a>
+             <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+                <b id="nav-a-4"> Whatsapp</b>
+             </a>
+             <a href="index">
+                <i class="fa-solid fa-home"></i>
+             </a>
+          </div></div>
+          <div id="nav-div-2">
+             <a href="#menu-expand">
+                <i style="font-size: 200%;" class="fa-solid fa-bars" id="menu-bars"></i><b id="nav-a5">&emsp;Menu</b>
+             </a> 
+          </div>           
+         
+          <div id="nav-div-4">
+             <a href="#menu-expand-celular">
+                <b id="nav-a5">&emsp;Menu</b>
+                <i style="font-size: 200%;" class="fa-solid fa-bars" id="menu-bars"></i>              
+             </a>              
+          </div>                      
+       </nav>
+
+       <!-- Expansão Menu Navegação-->
+       <div class="menu-class borda-menu" id="menu-expand">               
+          <a href="#dark-mode-input" class="btn-galeria" id="close">X</a>               
+          <div style="width:80%; text-align: left; justify-content: center; text-decoration: none;">
+             <ul class="menu-exp-ul">
+                <li> <a href="curriculo" style="text-decoration: none;">Sobre a empresa</a></li>
+                <li><a href="servicos">Galeria de serviços</a></li>
+                <li><a href="contato">Fale conosco</a></li>
+                <li><a href="blog">Blog</a></li>
+             </ul>                        
+          </div>            
+       </div>
+       
+       <!-- Expansão Menu Navegação Celular-->
+       <div class="menu-class borda-menu" id="menu-expand-celular">               
+          <a href="#dark-mode-input" class="btn-galeria" id="close">X</a>               
+          <div style="width:100%; text-align: left; justify-content: center; text-decoration: none;">
+             <ul class="menu-exp-ul">
+                <li> <a href="curriculo" style="text-decoration: none;">Sobre a empresa</a></li>
+                <li><a href="servicos">Galeria de serviços</a></li>
+                <li><a href="contato">Fale conosco</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>                  
+                <li><a href="index"><i class="fa-solid fa-home"></i> Home</a></li>
+             </ul>                        
+          </div>            
+       </div>  
+ 
+
+  <!--Banner rotativo-->
+  <div class="slider">
+    <div class="slides">
+       <input type="radio" name="radio-btn" id="radio1">
+       <input type="radio" name="radio-btn" id="radio2">
+       <input type="radio" name="radio-btn" id="radio3">
+       <input type="radio" name="radio-btn" id="radio4">               
+       <div class="slideb first">
+          <div class="container degradee" style="width:100%; height: 100%; margin:0; padding:o">
+             <div class="container-conteudo menor">
+             <table class="table-home">
+                <tr>
+                   <td class="fonte-home t-400 claro maior-txt">O quê são templates?</td>                          
+                </tr>
+                <tr>
+                   <td><p class="t-200 claro tam-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, fuga remconsequuntur corrupti cumque impedit, maxime saepe officiis, iste blanditiis! Excepturi, delectus dolorum.</p></td>
+                </tr>
+                <tr>
+                   <td><a href="servicos"><button class="tam-2 t-500" id="botao-home" style="z-index: 9999;">Ver os templates</button></a></td>
+                </tr>
+             </table>
+          </div>
+       </div>
+    </div>
+       <div class="slideb" >                  
+          <div class="container degradee" style="width:100%; height: 100%; margin:0; padding:o">
+             <div class="container-conteudo menor">
+                
+             <table class="table-home">
+                <tr>
+                   <td class="fonte-home t-400 claro maior-txt">O quê são templates?</td>                          
+                </tr>
+                <tr>
+                   <td><p class="t-200 claro tam-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, fuga remconsequuntur corrupti cumque impedit, maxime saepe officiis, iste blanditiis! Excepturi, delectus dolorum.</p></td>
+                </tr>
+                <tr>
+                   <td><a href="servicos"><button class="tam-2 t-500" id="botao-home" style="z-index: 9999;">Ver os templates</button></a></td>
+                </tr>
+             </table>
+          </div>
+       </div>
+       </div>
+       <div class="slideb" >
+          <div class="container degradee" style="width:100%; height: 100%; margin:0; padding:o">
+             
+             <div class="container-conteudo menor">
+             <table class="table-home">
+                <tr>
+                   <td class="fonte-home t-400 escuro maior-txt">O quê são templates?</td>                          
+                </tr>
+                <tr>
+                   <td><p class="t-200 escuro tam-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, fuga remconsequuntur corrupti cumque impedit, maxime saepe officiis, iste blanditiis! Excepturi, delectus dolorum.</p></td>
+                </tr>
+                <tr>
+                   <td><a href="servicos"><button class="tam-2 t-500" id="botao-home-dk" style="z-index: 9999;">Ver os templates</button></a></td>
+                </tr>
+             </table>
+          </div>
+       </div>
+       </div>
+       <div class="slideb">
+          <div class="container degradee" style="width:100%; height: 100%; margin:0; padding:o">
+             <div class="container-conteudo menor">
+             <table class="table-home">
+                <tr>
+                   <td class="fonte-home t-400 claro maior-txt">O quê são templates?</td>                          
+                </tr>
+                <tr>
+                   <td><p class="t-200 claro tam-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, fuga remconsequuntur corrupti cumque impedit, maxime saepe officiis, iste blanditiis! Excepturi, delectus dolorum.</p></td>
+                </tr>
+                <tr>
+                   <td><a href="servicos"><button class="tam-2 t-500" id="botao-home" style="z-index: 9999;">Ver os templates</button></a></td>
+                </tr>
+             </table>
+          </div>
+       </div>
+       </div>
+       <div class="navigation-auto">
+          <div class="auto-btn1" id="auto1"></div>
+          <div class="auto-btn2" id="auto2"></div>
+          <div class="auto-btn3" id="auto3"></div>
+          <div class="auto-btn4" id="auto4"></div>
+       </div>
+    </div>
+
+    <!--<div class="manual-navigation" id="mnavi">               
+       <label for="radio1" class="manual-btn" id="r1"></label>
+       <label for="radio2" class="manual-btn" id="r2"></label>
+       <label for="radio3" class="manual-btn" id="r3"></label>
+       <label for="radio4" class="manual-btn" id="r4"></label>                            
+    </div>-->
+
+    <div class="container" style="padding:0; margin: 0; width: 100%;">
+       <div class="ctrl-banner">  
+         <table style="width:100%">
+            <tr>
+              <td style="width:10%;"><button class="botao-banner" onclick="prevImage()"><i class="fa-solid fa-angle-left"></i></button></td>
+              <td style="width:80%;"></td>
+              <td style="width:10%; text-align:right"><button class="botao-banner" onclick="nextImage()"><i class="fa-solid fa-angle-right"></i></button> </td>
+           </tr>
+         </table>            
+      </div>
+    </div>
+ </div>
+
+
+<div class="container-banner-rot">
+
+<div class="YT-container">            
+   <iframe src="//www.youtube.com/embed/LXb3EKWsInQ?autoplay=1&mute=1&version=3&loop=1&playlist=LXb3EKWsInQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="iframe-v1"></iframe>
+   <iframe src="//www.youtube.com/embed/NVc_xY_dP-M?autoplay=1&mute=1&version=3&loop=1&playlist=NVc_xY_dP-M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="iframe-v2"></iframe>
+   <iframe src="//www.youtube.com/embed/iimxl_RU4Tw?autoplay=1&mute=1&version=3&loop=1&playlist=iimxl_RU4Tw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="iframe-v3"></iframe>
+   <iframe src="//www.youtube.com/embed/Zbg1BHOVzRg?autoplay=1&mute=1&version=3&loop=1&playlist=Zbg1BHOVzRg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="iframe-v4"></iframe>
+   <!--id="YT-video"-->
+</div>
+</div>
+
+<section>
+   <!--<div id="nav-div-3">
+      <a href="#">
+         <i class="fa-brands fa-linkedin-in"></i>
+      <b id="nav-a-1">LinkedIn</b>
+      </a>
+      <a href="#">
+         <i class="fa-brands fa-instagram"></i>
+         <b id="nav-a-2">Instagram</b>
+      </a>
+      <a href="#">
+         <i class="fa-brands fa-facebook"></i>
+         <b id="nav-a-3"> Facebook</b>
+      </a>
+      <a href="#">
+         <i class="fa-brands fa-whatsapp"></i>
+         <b id="nav-a-4"> Whatsapp</b>
+      </a>
+      <a href="index">
+         <i class="fa-solid fa-home"></i>
+      </a>
+   </div>-->
+</section>
+
+
+ <!--Cards principais-->
+ <div class="container responsivo">                         
+   <a href="curriculo" class="card estilo cor-clara borda-princ" id="card-anim-1">            
+      <p class="t-200 big-txt claro" style="margin-top:0;">Sobre o autor</p>
+      <p class="texto claro"> Conheça melhor o anunciante, sua trajetória pessoal e traços de sua personalidade para a prestação do seu serviço.</p>
+      <i class="fa-solid fa-user claro" style="font-size: 1150%; margin-top: 10%; margin-top:30px;"); id="fa1"></i>           
+   </a>
+   <a href="servicos" class="card estilo cor-clara borda-princ" id="card-anim-1">            
+      <p class="t-200 big-txt claro" style="margin-top:0;">Galeria de serviços</p>
+      <p class="texto claro" > Veja os detalhes de seu trabalho, com imagens e textos detalhados sobre cada serviço prestado.</p>
+      <i class="fa-solid fa-folder-open claro" style="font-size: 1250%; margin-top: 10%;" id="fa2"></i>           
+   </a>
+   <a href="contato" class="card estilo cor-clara borda-princ" id="card-anim-1">            
+      <p class="t-200 big-txt claro" style="margin-top:0;">Mensagem</p>
+      <p class="texto claro"> Entre em contato com o profissional, simultaneamente por whatsapp e e-mail e aguarde o seu retorno.</p>
+      <i class="fa-solid fa-envelope claro" style="font-size: 1450%; margin-top: 10%;" id="fa3"></i>
+   </a>
+   <a href="blog" class="card estilo cor-clara borda-princ" id="card-anim-1">            
+      <p class="t-200 big-txt claro" style="margin-top:0;">Blog</p>
+      <p class="texto claro"> Entre em contato com o profissional, simultaneamente por whatsapp e e-mail e aguarde o seu retorno.</p>
+      <i class="fa-solid fa-feather claro" style="font-size: 1450%; margin-top: 10%;" id="fa4"></i>
+   </a>      
+</div>
+
+<!-- Bloco de Texto-->
+<div class="container responsivo espaco margem">
+   <div class="container-conteudo menor">
+      <h2 class="titulo escuro">O quê são templates?</h2>
+      <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+   Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+   por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+   Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+   por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+     por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+     se opta pelo caminho da customização (construção do zero, criação de padrões).
+      </p>
+   </div>       
+</div>
+
+<!-- Separador com imagem-->          
+
+
+ <!-- Separador com imagem-->     
+ <div class="container espaco">
+   <div class="box-img" style="background-image: url('img/fundo-teste.jpg'); height:45vh;"><p class="t-200 big-txt claro">O quê são templates?</p></div> 
+</div>
+
+
+
+
+
+<!-- Bloco de Texto-->
+<div class="container responsivo espaco">
+   <div class="container-conteudo menor">
+      <h2 class="titulo escuro">O quê são templates?</h2>
+      <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+   Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+   por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+   Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+   por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+     por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+     se opta pelo caminho da customização (construção do zero, criação de padrões).
+      </p>
+   </div>       
+</div>
+
+<!-- Cards Carta -->
+<div class="container">
+   <div class="container responsivo menor">
+      <div id="carta-cnt">
+         <div class="estilo-crd cor-princ" id="carta">            
+            <div id="frente"><p class="titulo cor-fundo-txt" style="font-size: 400%;"><i class="fa-solid fa-car"></i></p></div>
+            <div id="verso"><p class="titulo cor-fundo-txt"> Estacionamento no local</p></div>
+         </div>         
+      </div>
+      <div id="carta-cnt">
+         <div class="estilo-crd cor-princ" id="carta">            
+            <div id="frente"><p class="titulo cor-fundo-txt" style="font-size: 400%;"><i class="fa-solid fa-cake-candles"></i></p></div>
+            <div id="verso"><p class="titulo cor-fundo-txt"> 30 anos no mercado, desde 1992.</p></div>            
+         </div>         
+      </div>
+      <div id="carta-cnt">
+         <div class="estilo-crd cor-princ" id="carta">            
+            <div id="frente"><p class="titulo cor-fundo-txt" style="font-size: 400%;"><i class="fa-brands fa-whatsapp"></i></p></div>
+            <div id="verso"><p class="titulo cor-fundo-txt">Atendimento por whatsapp 24h</p></div>
+         </div>         
+      </div>
+      <div id="carta-cnt">
+         <div class="estilo-crd cor-princ" id="carta">            
+            <div id="frente"><p class="titulo cor-fundo-txt" style="font-size: 400%;"><i class="fa-solid fa-trophy"></i></p></div>
+            <div id="verso"><p class="titulo cor-fundo-txt">Líder em vendas na região.</p></div>
+         </div>         
+      </div>
+      <div id="carta-cnt">
+         <div class="estilo-crd cor-princ" id="carta">            
+            <div id="frente"><p class="titulo cor-fundo-txt" style="font-size: 400%;"><i class="fa-solid fa-dog"></i></p></div>
+            <div id="verso"><p class="titulo cor-fundo-txt" > Lugar para o seu Pet</p></div>
+         </div>         
+      </div>
+   </div>
+</div>
+
+
+<!-- Blocos de Texto-->
+<div class="container responsivo espaco" id="cards-principal">
+   <div class="card">
+      <h2 class="titulo escuro">O quê são templates?</h2>
+      <p class="texto">Os templates são estruturas pré-construídas, prontas para serem implementadas.<br>
+Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+se opta pelo caminho da customização (construção do zero, criação de padrões).
+      </p>
+   </div>
+   <div class="card">
+      <h2 class="titulo escuro">Por quê usar templates</h2>
+      <p class="texto">Os templates são estruturas pré-construídas, prontas para serem implementadas.<br>
+Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+se opta pelo caminho da customização (construção do zero, criação de padrões).Os templates são estruturas pré-construídas, prontas para serem implementadas.<br>
+Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+por parte do cliente e .
+      </p>
+   </div>
+   <div class="card">
+      <h2 class="titulo escuro">Por quê usar templates</h2>
+      <p class="texto">Os templates são estruturas pré-construídas, prontas para serem implementadas.
+Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+se opta pelo caminho da customização (construção do zero, criação de padrões).
+      </p>         
+   </div>
+</div>
+
+
+ <!-- Rodapé-->
+ <footer>
+   <div class="container responsivo" style="text-align: center;">
+      <p class="texto">Rua dos Testes, 123 - Bairro Teste</p>
+      <p class="texto">|</p>
+      <p class="texto">Fone: (19) 3333-3333 : Whatsapp: (19) 99999-9999</p>
+      <p class="texto">|</p>
+      <p class="texto">E-mail: teste@teste.com.br</p>                     
+   </div>
+   <p class="texto menor-txt" style="text-align: center;"> 
+   © 2022 Woud Marketing Templates - Todos os direitos reservados.</p>
+</footer>
+</div>
+
+<script src="https://kit.fontawesome.com/e4057a48ad.js" crossorigin="anonymous"></script>
+<script src="js/java-carrosel.js"></script>
+
+
+</body>
+
+</html>

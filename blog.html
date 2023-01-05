@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+   <head>      
+      
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Gustavo Turatti">
+      <meta name="description" content="Projeto de site pessoal">
+      <meta name="keywords" content="design, curriculo">
+
+      <title>Site Pessoal / Gustavo Turatti </title>
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+      <link href="css/css_pagina1.css" type="text/css" rel="stylesheet">
+      <link href="css/all.min.css" type="text/css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+   </head>
+   
+   <body>
+     
+
+    <!--Cabeçalho e menu superior-->
+      <input type="checkbox" id="dark-mode-input"/>
+      <label class="dark-mode-toggler" for="dark-mode-input">
+         <i class="fa-solid fa-moon" id="icon-luz"></i>
+         <i class="fa-solid fa-sun" id="icon-escuro"></i>
+         <div></div>
+      </label>
+
+      
+      
+   <!-- Página dentro da DIV-->
+      <div class="page">
+   
+          <!-- Menu Navegação-->
+          <nav class="nav-outras">
+            <div id="nav-div-1"><img id="nav-logo" src="img/Logo-blue.png"></a></div>
+                      
+           <div id="nav-div-3">
+               <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+               <b id="nav-a-1">LinkedIn</b>
+               </a>
+               <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                  <b id="nav-a-2">Instagram</b>
+               </a>
+               <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                  <b id="nav-a-3"> Facebook</b>
+               </a>
+               <a href="#">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <b id="nav-a-4"> Whatsapp</b>
+               </a>
+               <a href="index">
+                  <i class="fa-solid fa-home"></i>
+               </a>
+            </div>
+            <div id="nav-div-2">
+               <a href="#menu-expand">
+                  <i style="font-size: 200%;" class="fa-solid fa-bars" id="menu-bars"></i><b id="nav-a5">&emsp;Menu</b>
+               </a> 
+            </div> 
+            <div id="nav-div-4">
+               <a href="#menu-expand-celular">
+                  
+                  <i style="font-size: 200%;" class="fa-solid fa-bars" id="menu-bars"></i>              
+                  <b id="nav-a5">Menu&emsp;</b>
+               </a>              
+            </div>                      
+         </nav>
+
+         <!-- Expansão Menu Navegação-->
+         <div class="menu-class borda-menu" id="menu-expand">               
+            <a href="#dark-mode-input" class="btn-galeria" id="close">X</a>               
+            <div style="width:80%; text-align: left; justify-content: center; text-decoration: none;">
+               <ul class="menu-exp-ul">
+                  <li> <a href="curriculo" style="text-decoration: none;">Sobre a empresa</a></li>
+                  <li><a href="servicos">Galeria de serviços</a></li>
+                  <li><a href="contato">Fale conosco</a></li>
+                  <li><a href="blog">Blog</a></li>
+               </ul>                        
+            </div>            
+         </div>
+         
+         <!-- Expansão Menu Navegação Celular-->
+         <div class="menu-class borda-menu" id="menu-expand-celular">               
+            <a href="#dark-mode-input" class="btn-galeria" id="close">X</a>               
+            <div style="width:100%; text-align: left; justify-content: center; text-decoration: none;">
+               <ul class="menu-exp-ul">
+                  <li> <a href="curriculo" style="text-decoration: none;">Sobre a empresa</a></li>
+                  <li><a href="servicos">Galeria de serviços</a></li>
+                  <li><a href="contato">Fale conosco</a></li>
+                  <li><a href="blog">Blog</a></li>
+                  <li><a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                  <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                  <li><a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>                  
+                  <li><a href="index"><i class="fa-solid fa-home"></i> Home</a></li>
+               </ul>                        
+            </div>            
+         </div>  
+         
+         <div class="container" style="padding:.4em; margin:.4em;"></div>
+         <div class="container" style="padding:0; margin:0;"><b class="big-txt t-200">Blog</b></div>
+         <div class="container" style="padding:0; margin-top:.5em;"><b class="texto t-200">navegue por categoria</b></div>
+   
+         <!--Galeria rotativa-->
+         <div class="slider-galeria" >
+            <div class="container responsivo" style="padding:0; margin:0;" id="mcat">
+               <label for="radio1-blog-cat" class="manual-btn-blog cat" id="cat1">Esportes</label>
+               <label for="radio2-blog-cat" class="manual-btn-blog cat" id="cat2">Música</label>
+               <label for="radio3-blog-cat" class="manual-btn-blog cat" id="cat3">Profissão</label>
+               <label for="radio4-blog-cat" class="manual-btn-blog cat" id="cat4">Outros</label>
+               
+            </div>
+            <div class="container borda-div maior" style="margin: 5px;" ></div>  
+            
+            <div class="slides-galeria ">
+               <input type="radio" name="radio-btn" id="radio1-blog-cat" checked>
+               <input type="radio" name="radio-btn" id="radio2-blog-cat">
+               <input type="radio" name="radio-btn" id="radio3-blog-cat">
+               <input type="radio" name="radio-btn" id="radio4-blog-cat">
+               
+               <div class="slideb-galeria first" id="categoria-1">
+                  <div class="container">
+                     <table id="table-blog">
+                     <td>
+                     <input type="checkbox" name="radio-btn" id="radio1-blog" class="check-blog" >
+                     <input type="checkbox" name="radio-btn" id="radio2-blog" class="check-blog">
+                     <input type="checkbox" name="radio-btn" id="radio3-blog" class="check-blog">
+                     <input type="checkbox" name="radio-btn" id="radio4-blog" class="check-blog">
+            
+                     <div class="container-conteudo"><b class="texto t-200">assunto</b></div>
+                     <div class="container-conteudo" style="margin-bottom: 2em;"><b class="maior-txt t-400">Esportes</b></div>    
+                        <label for="radio1-blog" class="manual-btn-blog" id="r1">Assunto 1</label>
+                        <label for="radio2-blog" class="manual-btn-blog" id="r2">Assunto 2</label>
+                        <label for="radio3-blog" class="manual-btn-blog" id="r3">Assunto 3</label>
+                        <label for="radio4-blog" class="manual-btn-blog" id="r4">Assunto 4</label>
+                     
+                     
+            
+                     <div class="container responsivo" id="assunto-1">
+                      <div class="container-conteudo">
+                         <h2 class="titulo escuro">O quê são templates?</h2>
+                         <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                      Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                      por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                      Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                      por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                        Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                        por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                        se opta pelo caminho da customização (construção do zero, criação de padrões).
+                         </p>
+                      </div>
+                      <div class="container borda-div maior"  ></div>       
+                   </div>
+            
+                   <div class="container responsivo" id="assunto-2">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>       
+                  </div>
+            
+                  <div class="container responsivo" id="assunto-3">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>      
+                  </div>
+            
+                  <div class="container responsivo" id="assunto-4">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>        
+                  </div></td>
+               </table>
+            </div>
+               </div>
+               <div class="slideb-galeria" id="categoria-2">
+                  <div class="container">
+                     <table id="table-blog">
+                     <td>
+                     <input type="checkbox" name="radio-btn" id="radio5-blog" class="check-blog" >
+                     <input type="checkbox" name="radio-btn" id="radio6-blog" class="check-blog">
+                     <input type="checkbox" name="radio-btn" id="radio7-blog" class="check-blog">
+                     <input type="checkbox" name="radio-btn" id="radio8-blog" class="check-blog">
+            
+                    
+                     <div class="container-conteudo"><b class="texto t-200">assunto</b></div>
+                     <div class="container-conteudo" style="margin-bottom: 2em;"><b class="maior-txt t-400">Música</b></div>     
+                        <label for="radio5-blog" class="manual-btn-blog" id="r5">Assunto 1</label>
+                        <label for="radio6-blog" class="manual-btn-blog" id="r6">Assunto 2</label>
+                        <label for="radio7-blog" class="manual-btn-blog" id="r7">Assunto 3</label>
+                        <label for="radio8-blog" class="manual-btn-blog" id="r8">Assunto 4</label>
+                     
+                     
+            
+                     <div class="container responsivo" id="assunto-5">
+                      <div class="container-conteudo">
+                         <h2 class="titulo escuro">O quê são templates?</h2>
+                         <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                      Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                      por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                      Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                      por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                        Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                        por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                        se opta pelo caminho da customização (construção do zero, criação de padrões).
+                         </p>
+                      </div>
+                      <div class="container borda-div maior"  ></div>       
+                   </div>
+            
+                   <div class="container responsivo" id="assunto-6">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>       
+                  </div>
+            
+                  <div class="container responsivo" id="assunto-7">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>      
+                  </div>
+            
+                  <div class="container responsivo" id="assunto-8">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>        
+                  </div></td>
+               </table>
+            </div>
+               </div>
+               <div class="slideb-galeria"  id="categoria-3">
+                   <div class="container">
+                     <table id="table-blog">
+                     <td>
+                     <input type="checkbox" name="radio-btn" id="radio9-blog" class="check-blog" >
+                     <input type="checkbox" name="radio-btn" id="radio10-blog" class="check-blog">
+                     <input type="checkbox" name="radio-btn" id="radio11-blog" class="check-blog">
+                     <input type="checkbox" name="radio-btn" id="radio12-blog" class="check-blog">
+            
+                    
+                     <div class="container-conteudo"><b class="texto t-200">assunto</b></div>
+                     <div class="container-conteudo" style="margin-bottom: 2em;"><b class="maior-txt t-400">Profissão</b></div>      
+                        <label for="radio9-blog" class="manual-btn-blog" id="r9">Assunto 1</label>
+                        <label for="radio10-blog" class="manual-btn-blog" id="r10">Assunto 2</label>
+                        <label for="radio11-blog" class="manual-btn-blog" id="r11">Assunto 3</label>
+                        <label for="radio12-blog" class="manual-btn-blog" id="r12">Assunto 4</label>
+                     
+                     
+            
+                     <div class="container responsivo" id="assunto-9">
+                      <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                         <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                      Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                      por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                      Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                      por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                        Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                        por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                        se opta pelo caminho da customização (construção do zero, criação de padrões).
+                         </p>
+                      </div>
+                      <div class="container borda-div maior"  ></div>       
+                   </div>
+            
+                   <div class="container responsivo" id="assunto-10">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>       
+                  </div>
+            
+                  <div class="container responsivo" id="assunto-11">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>      
+                  </div>
+            
+                  <div class="container responsivo" id="assunto-12">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>        
+                  </div></td>
+               </table>
+            </div>
+               </div>
+               <div class="slideb-galeria"  id="categoria-4">
+                 <div class="container">
+                  <table id="table-blog">
+                     <td>
+                     <input type="checkbox" name="radio-btn" id="radio13-blog" class="check-blog" >
+                     <input type="checkbox" name="radio-btn" id="radio14-blog" class="check-blog">
+                     <input type="checkbox" name="radio-btn" id="radio15-blog" class="check-blog">
+                     <input type="checkbox" name="radio-btn" id="radio16-blog" class="check-blog">
+            
+                    
+                     <div class="container-conteudo"><b class="texto t-200">assunto</b></div>
+                     <div class="container-conteudo" style="margin-bottom: 2em;"><b class="maior-txt t-400">Outros</b></div>    
+                        <label for="radio13-blog" class="manual-btn-blog" id="r13">Assunto 1</label>
+                        <label for="radio14-blog" class="manual-btn-blog" id="r14">Assunto 2</label>
+                        <label for="radio15-blog" class="manual-btn-blog" id="r15">Assunto 3</label>
+                        <label for="radio16-blog" class="manual-btn-blog" id="r16">Assunto 4</label>
+                     
+                     
+            
+                     <div class="container responsivo" id="assunto-13">
+                      <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                         <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                      Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                      por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                      Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                      por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                        Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                        por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                        se opta pelo caminho da customização (construção do zero, criação de padrões).
+                         </p>
+                      </div>
+                      <div class="container borda-div maior"  ></div>       
+                   </div>
+            
+                   <div class="container responsivo" id="assunto-14">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>       
+                  </div>
+            
+                  <div class="container responsivo" id="assunto-15">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>      
+                  </div>
+            
+                  <div class="container responsivo" id="assunto-16">
+                     <div class="container-conteudo">
+                        <h2 class="titulo escuro">O quê são templates?</h2>
+                        <p class="texto">Os templates são emplates são estruturas pré-construídas, prontas para serem implementadas.<br>
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvmplates são estruturas pré-construídas, prontas para serem implementadas.
+                     Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                     por parte do cliente e do desenvolvstruturas pré-construídas, prontas para serem implementadas.
+                       Isso resulta em um ganho de tempo e economia de custos e de energia dispendida no desenvolvimento, 
+                       por parte do cliente e do desenvolvedor, que geralmente tornam indefinadas a sua estimativa, quando
+                       se opta pelo caminho da customização (construção do zero, criação de padrões).
+                        </p>
+                     </div>
+                     <div class="container borda-div maior"  ></div>        
+                  </div></td>
+               </table>
+            </div>
+               </div>
+              
+            </div>
+        
+            
+         </div>
+
+        
+
+   
+
+    
+          <!-- Rodapé-->
+          <footer>
+            <div class="container responsivo" style="text-align: center;">
+               <p class="texto">Rua dos Testes, 123 - Bairro Teste</p>
+               <p class="texto">|</p>
+               <p class="texto">Fone: (19) 3333-3333 : Whatsapp: (19) 99999-9999</p>
+               <p class="texto">|</p>
+               <p class="texto">E-mail: teste@teste.com.br</p>                     
+            </div>
+            <p class="texto menor-txt" style="text-align: center;"> 
+            © 2022 Woud Marketing Templates - Todos os direitos reservados.</p>
+         </footer>
+         </div>
+        
+        <script src="https://kit.fontawesome.com/e4057a48ad.js" crossorigin="anonymous"></script>
+        <script src="js/java-carrosel.js"></script>
+        
+    </body>
+
+</html>
